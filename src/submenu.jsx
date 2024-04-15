@@ -1,9 +1,5 @@
 import React from "react";
-import bg from '../src/media/bg.jpeg'
 function Submenu(){
-    const navstyle={
-        
-    }
     return(
         <nav id="submenu">
             <h1>Artisan</h1>
