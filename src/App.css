@@ -1,0 +1,374 @@
+body{
+  background-image: url(media/bg.jpeg);
+  color: #fff;
+}
+
+#dp{
+  width: 3rem;
+  border-radius: 30px;
+}
+
+#network{
+  width: 1.5rem;
+  border-radius: .3rem;
+}
+
+#icon{
+  width: 1.2rem;
+}
+
+#flex{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+main{
+  display: grid;
+  height: 100vh;
+  grid-template-columns: 0.8fr 2.8fr 1fr;
+  grid-template-rows:1fr 2fr 2fr 1fr;
+  grid-template-areas: 
+  "submenu submenu submenu"
+  "sidemenu banner balance"
+  "sidemenu hotbids collections"
+  "footer footer footer"
+  ;
+}
+
+#submenu{
+  grid-area: submenu;
+}
+
+.sidemenu{
+  grid-area: sidemenu;
+  display: flex;
+  flex-flow: column;
+  gap: 40%;
+  background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(1px);
+  text-wrap: nowrap;
+}
+
+.banner{
+  text-wrap: nowrap;
+  grid-area: banner;
+  margin: 20px ;
+}
+
+.balance{
+  grid-area: balance;
+}
+
+.HotBids{
+  grid-area: hotbids;
+}
+
+.top_b{
+  grid-area: collections;
+}
+
+.business{
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+
+#top_nav{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(1px);
+  border-radius: 1rem;
+  width: 60%;
+  margin: 2rem auto;
+}
+
+#top_nav ul{
+  display: flex;
+  justify-content: space-between;
+  gap: 1.5rem;
+  list-style: none;
+  flex-wrap: wrap;
+}
+
+#top_nav a{
+  text-decoration: none;
+  color: #fff;
+}
+
+#top_nav #cw{
+  background: linear-gradient(to right , #8a2be2,#4b0082);
+  border-radius: 10px;
+  padding: 12px;
+  display: flex;
+  align-items: center;
+}
+
+.intro{
+  margin: 60px auto;
+}
+
+#intro_h1{
+  text-align: center;
+  font-size: 2.5rem;
+}
+
+#sub_intro{
+  text-align: center;
+}
+
+#submenu{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 5rem;
+  background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(1px);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+  margin: 0;
+}
+
+#submenu input[type="search"]{
+  height: 2.5rem;
+  width: 30rem;
+  border-radius: 10px;
+  background: none;
+  border: 2px solid #555;
+  color: #fff;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 1.1rem;
+}
+
+.HotBids{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+}
+
+.overview{
+  display: flex;
+  gap: 1.2rem;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(1px);
+  border-radius: 20px;
+  padding: 15px;
+}
+
+.banner .overview #overview_deets #nft_type, #balance, #options{
+  display: flex;
+  justify-content: space-between;
+  gap: 80px;
+  align-items: center;
+}
+
+.banner .overview #overview_deets{
+  display: flex;
+  flex-flow: column;
+  gap: 20px;
+}
+
+.banner #options button{
+  padding: 10px 20px;
+  color: #fff;
+  background: linear-gradient(to right, #4b0082, #8a2be2);
+  background:  rgba(200, 162, 200, 0.5);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.banner #banner_img{
+  width: 18rem;
+  height: 16rem;
+  border-radius: 10px;
+}
+
+#balance{
+  display: flex;
+  align-items: center;
+}
+
+.HotCard{
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(1px);
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  border-radius: 10px;
+}
+
+.HotCard .description{
+  display: flex;
+  justify-content: space-between;
+  gap: 50px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#hotnav{
+  display: flex;
+  justify-content: space-between;
+  gap: 200px;
+  align-items: center;
+}
+
+#hotnav ul{
+  display: flex;
+  gap: 20px;
+  list-style-type: none;
+}
+
+#hotnav ul li a{
+  color: white;
+  text-decoration: none;
+  font-size: 15px;
+  padding: 4px 10px;
+  transition: 0.5s ease-in-out;
+  cursor: pointer;
+}
+
+#hotnav ul li a:hover{
+  border: 1px solid #8a2be2;
+  border-radius: 20px;
+  background: linear-gradient(to right , #8a2be2,#4b0082);
+}
+
+.HotCard .owner_deets h2, h3, h4,h5{
+  margin: 3px;
+}
+
+.banner #user{
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+#balance span{
+  display: flex;
+  align-items: center;
+}
+
+.owner_deets{
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  margin: 10px 0;
+}
+
+.owner_deets #dp{
+  margin-left: 10px;
+}
+
+#bid_nft{
+  width: 150px;
+  height: 120px;
+  border-radius: 10px;
+}
+
+#owner_dp{
+  width: 50px;
+  border-radius: 30px;
+}
+
+.bid_deets{
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  background:  rgba(200, 162, 200, 0.5);
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+.bid_deets .grid_1 h4{
+  display: flex;
+  align-items: center;
+  gap: 3px;
+}
+
+.sidemenu ul{
+  list-style-type: none;
+}
+
+.sidemenu ul li{
+  padding: 15px;
+}
+
+.sidemenu ul li a{
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.2rem;
+  transition: 0.5s;
+  font-weight: bold;
+}
+
+.sidemenu ul li a:hover{
+  padding: 15px;
+  background: linear-gradient(to right , rgba(255, 255, 255, 0.2)10%, rgba(255, 255,255, 0)90%);
+  border-left: 7px solid #776c6c;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+.balance{
+  backdrop-filter: blur(1px);
+  margin: 20px;
+  padding: 20px 30px;
+  border: 1px solid  rgba(200, 162, 200, 0.5);
+  border-radius: 10px;
+}
+
+.bal_nav{
+  display: flex;
+}
+
+.bal_nav button{
+  display: flex;
+  flex-flow: column;
+  padding: 22px;
+  color: white;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(1px);
+  font-weight: bold;
+  text-align: center;
+  border: none;
+  cursor: pointer;
+}
+
+.bal_nav #withdraw{
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.bal_nav #deposit{
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.top_b{
+  background: rgba(255, 218, 185, 0.5);
+  margin-right: 20px;
+  border-radius: 10px;
+}
+
+.collectable{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.c_deets{
+  display: flex;
+  flex-flow: column;
+}
+
+.footer{
+  grid-area: footer;
+  text-align: center;
+  font-size: 1.5rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
