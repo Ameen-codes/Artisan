@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import WithdrawFunds from "./withdraw";
+// import WithdrawFunds from "./withdraw";
 
 function Header() {
   const [accounts, setAccounts] = useState([]);
@@ -42,11 +42,12 @@ function Header() {
           return <span key={index}>{el}</span>;
         })}
 
-      <WithdrawFunds account={accounts[1]} />
+      {/* <WithdrawFunds account={accounts[1]} /> */}
       <span id="cw">
         <img src={require("./media/flash.png")} alt="img" />
 
-        <button onClick={connectMetaMask}>Connect Wallet</button>
+        {/* <button onClick={connectMetaMask}>Connect Wallet</button> */}
+        <a href="">connect wallet</a>
       </span>
     </nav>
   );

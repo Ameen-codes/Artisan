@@ -13,7 +13,7 @@ const HotCard = (props) =>{
                 <span>
                     <h4 >{props.name}</h4>
 
-                    <h5>{props.username}</h5>
+                    <h5>@{props.username}</h5>
                 </span>
             </div>
 
@@ -34,7 +34,7 @@ const HotCard = (props) =>{
 
                     <h5>current bid</h5>
 
-                    <h4><img src={props.network} id="network" alt="img" /> 4.6 ETH</h4>
+                    <h4><img src={props.network} id="network" alt="img" />{props.bid_price} {props.network_type}</h4>
 
                 </div>
 

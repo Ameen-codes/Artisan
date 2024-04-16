@@ -1,29 +1,25 @@
 import React from "react";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faLight, faShoppingBag ,faPaintBrush, faGear, faChartSimple, faPhone, faMoneyBill} from '@fortawesome/free-solid-svg-icons';
+
+
 function Sidemenu(){
     return(
         <nav className="sidemenu">
 
             <ul id="topside">
                 <li><a href=""><img src={require("./media/dashboard.png")} alt="" id="icon" />Dashboard</a></li>
-                    
-                <li><a href=""><svg id="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M160 112c0-35.3 28.7-64 64-64s64 
-                    28.7 64 64v48H160V112zm-48 48H48c-26.5 0-48 21.5-48 48V416c0 53 43 96 96 96H352c53 0 96-43 
-                    96-96V208c0-26.5-21.5-48-48-48H336V112C336 50.1 285.9 0 224 0S112 50.1 112 112v48zm24 48a24 24 0 1 1 0 48
-                    24 24 0 1 1 0-48zm152 24a24 24 0 1 1 48 0 24 24 0 1 1 -48 0z"/></svg>Market</a></li>
-                <li><a href=""><svg id="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
-                    <path d="M339.3 367.1c27.3-3.9 51.9-19.4 67.2-42.9L568.2 74.1c12.6-19.5 9.4-45.3-7.6-61.2S517.7-4.4 499.1 9.6L262.4 
-                    187.2c-24 18-38.2 46.1-38.4 76.1L339.3 367.1zm-19.6 25.4l-116-104.4C143.9 290.3 96 339.6 96 400c0 3.9 .2 7.8 .6 11.6C98.4 
-                    429.1 86.4 448 68.8 448H64c-17.7 0-32 14.3-32 32s14.3 32 32 32H208c61.9 0 112-50.1 112-112c0-2.5-.1-5-.2-7.5z"/>
-</svg>My NFTs</a></li>
-                <li><a href=""><img src={require("./media/transactions.png")} alt="" id="icon"/>Transactions</a></li>
+                <li><a href=""><FontAwesomeIcon id="icon" icon={ faShoppingBag} />Market</a></li>
+                <li><a href=""><FontAwesomeIcon id="icon" icon={faPaintBrush}/>My NFTs</a></li>
+                <li><a href=""><FontAwesomeIcon id="icon" icon={faMoneyBill}/> Transactions</a></li>
             </ul>
             
 
-            {/* <ul id="bottomside">
-                <li><img src={require("./media/")} alt="" /><a href="">Analytics</a></li>
-                <li><img src={require("./media")} alt="" /><a href="">Settings</a></li>
-                <li><img src={require("./media")} alt="" /><a href="">Support</a></li>
-            </ul> */}
+            <ul id="bottomside">
+                <li> <a href=""><FontAwesomeIcon id="icon" icon={faChartSimple} />Analytics</a></li>
+                <li><a href=""><FontAwesomeIcon id="icon" icon={faGear} /> Settings</a></li>
+                <li><a href=""><FontAwesomeIcon id="icon" icon={faPhone} />Support</a></li>
+            </ul>
             
         </nav>
     );
