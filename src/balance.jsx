@@ -7,9 +7,9 @@ function Balance (){
             <h1>$42,234.00</h1>
 
             <div className="bal_nav">
-                <button id="withdraw"><img src={require("./media/icons8-withdraw-53.png")} alt="btn" id="icon"/> withdraw</button>
-                <button id="send"><img src={require("./media/icons8-send-50.png")} alt="btn" id="icon"/> send</button>
-                <button id="deposit"><img src={require("./media/icons8-wallet-60.png")} alt="btn" id="icon"/> deposit</button>
+                <button id="withdraw"><img src={require("./media/icons8-withdraw-53.png")} alt="btn" id="icon"/> Withdraw</button>
+                <button id="send"><img src={require("./media/icons8-send-50.png")} alt="btn" id="icon"/> Send</button>
+                <button id="deposit"><img src={require("./media/icons8-wallet-60.png")} alt="btn" id="icon"/> Deposit</button>
             </div>
         </div>
     )

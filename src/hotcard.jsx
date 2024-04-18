@@ -11,7 +11,7 @@ const HotCard = (props) =>{
                 </span>
 
                 <span>
-                    <h4 >{props.name}</h4>
+                    <h4>{props.name}</h4>
 
                     <h5>@{props.username}</h5>
                 </span>

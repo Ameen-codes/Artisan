@@ -1,6 +1,12 @@
+@font-face {
+  font-family: maven;
+  src: url(Maven_Pro/MavenPro-VariableFont_wght.ttf);
+}
+
 body{
     background-image: url(media/bg.jpeg);
     color: #fff;
+    font-family: maven;
   }
   
   #dp{
@@ -15,10 +21,6 @@ body{
   
   #icon{
     width: 1.2rem;
-  }
-  
-  #icon:hover{
-    color: red;
   }
   
   #flex{
@@ -102,13 +104,20 @@ body{
     text-decoration: none;
     color: #fff;
   }
+
+  #top_nav a:hover{
+    color: #8a2be2;
+  }
   
   #top_nav #cw{
-    background: linear-gradient(to right , #8a2be2,#4b0082);
+    background: linear-gradient(to right, #4b0082, #8a2be2);
     border-radius: 10px;
     padding: 12px;
     display: flex;
     align-items: center;
+    color: #fff;
+    border: none;
+    cursor: pointer;
   }
   
   .intro{
@@ -118,7 +127,22 @@ body{
   #intro_h1{
     text-align: center;
     font-size: 2.5rem;
+    font-family: sans-serif; 
   }
+
+  #intro_h1 {
+    border-right: 2px solid #fff;
+    animation: typing 2s steps(20, end); /* Typing animation */
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
   
   #sub_intro{
     text-align: center;
@@ -131,7 +155,6 @@ body{
     margin-top: 5rem;
     background-color: rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(1px);
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
     margin: 0;
   }
   
@@ -176,10 +199,17 @@ body{
   }
   
   .banner #options button{
-    padding: 10px 20px;
+    /* padding: 10px 20px; */
+    width: 8rem;
+    height: 2.7rem;
+    font-size: 1rem;
+    font-family: maven;
     color: #fff;
     background: linear-gradient(to right, #4b0082, #8a2be2);
     background:  rgba(200, 162, 200, 0.5);
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(1px);
+    box-shadow: 1px 1px 1px #8a2be2;
     border: none;
     border-radius: 5px;
     cursor: pointer;
@@ -202,6 +232,7 @@ body{
     display: flex;
     flex-flow: column;
     align-items: center;
+    border: 1px solid #8a2be2;
     border-radius: 10px;
   }
   
@@ -234,10 +265,9 @@ body{
     cursor: pointer;
   }
   
-  #hotnav ul li a:hover{
+  #hotnav ul li a:hover,#hotnav ul li a:focus{
     border: 1px solid #8a2be2;
     border-radius: 20px;
-    background: linear-gradient(to right , #8a2be2,#4b0082);
   }
   
   .HotCard .owner_deets h2, h3, h4,h5{
@@ -310,16 +340,13 @@ body{
   }
   
   .sidemenu ul li a:hover{
-    color: #B197FC;
+    /* color: #B197FC; */
     padding: 15px;
-    background: linear-gradient(to right , rgba(177, 151, 252, .2)10%, rgba(255, 255,255, 0)90%);
-    border-left: 7px solid rgb(149, 115, 250);
+    /* background: linear-gradient(to right , rgba(177, 151, 252, .2)10%, rgba(255, 255,255, 0)90%); */
+    box-shadow: 2px 2px 5px black;
+    border-left: 7px solid #8a2be2;
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
-  }
-  
-  .sidemenu ul li a:hover #icon{
-    color: #B197FC;
   }
   
   .balance{
@@ -327,6 +354,7 @@ body{
     margin: 20px;
     padding: 20px 30px;
     border: 1px solid  rgba(200, 162, 200, 0.5);
+    border: 1px solid #8a2be2;
     border-radius: 10px;
   }
   
@@ -363,7 +391,10 @@ body{
   }
   
   .top_b{
-    background: rgba(255, 218, 185, 0.5);
+    /* background: rgba(255, 218, 185, 0.5); */
+    background: rgba(138, 43, 226,0.1);
+    backdrop-filter: blur(.1px);
+    border: 3px solid rgba(255, 255, 255, 0.1);
     margin-right: 20px;
     border-radius: 10px;
   }

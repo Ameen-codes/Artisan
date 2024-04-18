@@ -30,7 +30,7 @@ function WithdrawFunds({ account }) {
 
   return (
     <div>
-      <h2>Withdraw Funds</h2>
+      {/* <h2>Withdraw Funds</h2>
       <label>
         Withdraw Amount (ETH):
         <input type="number" value={withdrawAmount} onChange={(e) => setWithdrawAmount(e.target.value)} />
@@ -44,7 +44,7 @@ function WithdrawFunds({ account }) {
         <p>
           Transaction submitted. Transaction Hash: <a href={`https://etherscan.io/tx/${transactionHash}`} target="_blank" rel="noopener noreferrer">{transactionHash}</a>
         </p>
-      )}
+      )} */}
     </div>
   );
 }

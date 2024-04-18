@@ -1,4 +1,6 @@
 import React from "react";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faSearch} from '@fortawesome/free-solid-svg-icons';
 function Submenu(){
     return(
         <nav id="submenu">
@@ -8,7 +10,7 @@ function Submenu(){
             
                 {/* <img src={require("./media/bg.jpeg")} alt="search icon" /> */}
                 
-                <input type="search"  placeholder="search..."/>
+                {/* <input type="search"  placeholder="search..." <FontAwesomeIcon icon={faSearch}/> /> */}
 
             </div> 
 
