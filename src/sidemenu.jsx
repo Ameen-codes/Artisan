@@ -9,16 +9,16 @@ function Sidemenu(){
 
             <ul id="topside">
                 <li><a href=""><img src={require("./media/dashboard.png")} alt="" id="icon" />Dashboard</a></li>
-                <li><a href=""><FontAwesomeIcon id="icon" icon={ faShoppingBag} />Market</a></li>
-                <li><a href=""><FontAwesomeIcon id="icon" icon={faPaintBrush}/>My NFTs</a></li>
-                <li><a href=""><FontAwesomeIcon id="icon" icon={faMoneyBill}/> Transactions</a></li>
+                <li><a href=""><FontAwesomeIcon id="faIcon" icon={ faShoppingBag} />Market</a></li>
+                <li><a href=""><FontAwesomeIcon id="faIcon" icon={faPaintBrush}/>My NFTs</a></li>
+                <li><a href=""><FontAwesomeIcon id="faIcon" icon={faMoneyBill}/> Transactions</a></li>
             </ul>
             
 
             <ul id="bottomside">
-                <li> <a href=""><FontAwesomeIcon id="icon" icon={faChartSimple} />Analytics</a></li>
-                <li><a href=""><FontAwesomeIcon id="icon" icon={faGear} /> Settings</a></li>
-                <li><a href=""><FontAwesomeIcon id="icon" icon={faPhone} />Support</a></li>
+                <li> <a href=""><FontAwesomeIcon id="faIcon" icon={faChartSimple} />Analytics</a></li>
+                <li><a href=""><FontAwesomeIcon id="faIcon" icon={faGear} /> Settings</a></li>
+                <li><a href=""><FontAwesomeIcon id="faIcon" icon={faPhone} />Support</a></li>
             </ul>
             
         </nav>

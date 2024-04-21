@@ -1,3 +1,7 @@
+:root{
+  --primary: #8a2be2;
+}
+
 @font-face {
   font-family: maven;
   src: url(Maven_Pro/MavenPro-VariableFont_wght.ttf);
@@ -19,8 +23,13 @@ body{
     border-radius: .3rem;
   }
   
-  #icon{
+  #faIcon{
     width: 1.2rem;
+  }
+
+  #faSocial{
+    width: 2rem;
+    height: 2rem;
   }
   
   #flex{
@@ -34,7 +43,7 @@ body{
     display: grid;
     height: 100vh;
     grid-template-columns: 0.8fr 2.8fr 1fr;
-    grid-template-rows:1fr 2fr 2fr 1fr;
+    grid-template-rows:1fr 2fr 2fr 1fr 1fr;
     grid-template-areas: 
     "submenu submenu submenu"
     "sidemenu banner balance"
@@ -103,11 +112,50 @@ body{
   #top_nav a{
     text-decoration: none;
     color: #fff;
+    position: relative;
   }
 
-  #top_nav a:hover{
-    color: #8a2be2;
+  #top_nav a::before, #top_nav a::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    height: 2px;
+    background-color: var(--primary);
+    width: 0;
+    transition: 0.5s;
   }
+
+  /* #top_nav a::before,
+  #top_nav a::after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  height: 2px; 
+  background-color: var(--primary);
+  width: 0; 
+  transition: width 0.3s ease; 
+}
+
+  #top_nav a::before {
+    left: 50%;
+    transform: translateX(-50%); 
+  } */
+
+  #top_nav a::after{
+    right: 0;
+    left: auto;
+    /* right: 50%;
+    transform: translateX(50%) */
+  }
+
+  #top_nav a:hover::before, #top_nav a:hover::after{
+    width: 100%;
+  }
+
+  /* #top_nav a:hover{
+    color: #8a2be2;
+  } */
   
   #top_nav #cw{
     background: linear-gradient(to right, #4b0082, #8a2be2);
@@ -128,21 +176,8 @@ body{
     text-align: center;
     font-size: 2.5rem;
     font-family: sans-serif; 
+    white-space: pre-line;
   }
-
-  #intro_h1 {
-    border-right: 2px solid #fff;
-    animation: typing 2s steps(20, end); /* Typing animation */
-}
-
-@keyframes typing {
-    from {
-        width: 0;
-    }
-    to {
-        width: 100%;
-    }
-}
   
   #sub_intro{
     text-align: center;
@@ -167,6 +202,17 @@ body{
     color: #fff;
     font-family: 'Courier New', Courier, monospace;
     font-size: 1.1rem;
+  }
+
+  .search-bar {
+    position: relative;
+  }
+  
+  .search-icon {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
   }
   
   .HotBids{
@@ -213,6 +259,10 @@ body{
     border: none;
     border-radius: 5px;
     cursor: pointer;
+  }
+
+  .banner #options button:hover{
+    opacity: 0.7;
   }
   
   .banner #banner_img{
@@ -383,11 +433,18 @@ body{
   .bal_nav #withdraw{
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
+    border-top: .1px solid #8a2be2;
   }
   
   .bal_nav #deposit{
     border-top-right-radius: 10px;
+    border-bottom: .1px solid #8a2be2;
     border-bottom-right-radius: 10px;
+  }
+
+  .bal_nav #send{
+    /* border-top: 1px solid #8a2be2; */
+    /* border-bottom: 1px solid #8a2be2; */
   }
   
   .top_b{
@@ -401,18 +458,73 @@ body{
   
   .collectable{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
+    margin: 0 2rem;
   }
   
   .c_deets{
     display: flex;
     flex-flow: column;
   }
+
+  .support {
+    display:flex;
+    flex-flow: column;
+    overflow-y: hidden;
+    margin: auto;
+    justify-content: space-around;
+    align-items: center;
+    width: 80%;
+    height: 50px;
+    transition: height 0.3s ease;
+    border: 3px solid #8a2be2;
+    box-shadow: 5px 5px 0px #8a2be2;
+    border-radius: 10px;
+    margin-top: 20px;
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(1px);
+}
+
+  .spanUp {
+      height: 250px; 
+  }
+
+  .rotateIcon {
+      transition: transform 0.3s ease;
+  }
+
+  .rotated {
+      transform: rotate(180deg);
+  }
   
+  .support .support_nav{
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+    gap: 8rem;
+    cursor: pointer;
+  }
+
+  .support .support_links{
+    display: flex;
+    flex-flow: column;
+    align-self:flex-start ;
+    margin-left: 20px;
+    gap: 20px;
+  }
+
+  .support_links span{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #8a2be2;
+  }
+
   .footer{
     grid-area: footer;
     text-align: center;
     font-size: 1.5rem;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
   }
+  

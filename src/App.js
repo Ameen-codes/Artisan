@@ -7,8 +7,9 @@ import Banner from './banner';
 import HotCard from './hotcard';
 import Balance from './balance';
 import TopCard from './topCollections';
-import Footer from './footer';
 import HotMenu from './hotmenu';
+import Support from './support';
+import Footer from './footer';
 
 function App() {
   return (
@@ -109,6 +110,7 @@ function App() {
         <div className='RightBar'>
           <Balance></Balance>
           <TopCard></TopCard>
+          <Support></Support>
         </div>
 
       {/* <Footer></Footer> */}

@@ -1,23 +1,23 @@
 import React from "react";
-function Collectable(){
+const Collectable = (props) => {
     return(
 
         <div className="collectable">
 
             <div className="owner_deets">
 
-                <img src={require("./media/lazy_grizzy.jpeg")} alt="img" id="owner_dp" />
+                <img src={props.C_img} alt="img" id="owner_dp" />
 
                 <div className="c_deets">
 
-                    <span className="type">Bored Ape</span>
-                    <span className="username">@ameen_d_great</span>
+                    <span className="type">{props.C_type}</span>
+                    <span className="username">@{props.C_username}</span>
                     
                 </div>
 
             </div>
 
-            <span className="worth">125.07K ETH</span>
+            <span className="worth">{props.C_worth} ETH</span>
 
         </div>
     )

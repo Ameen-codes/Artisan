@@ -1,18 +1,15 @@
 import React from "react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faSearch} from '@fortawesome/free-solid-svg-icons';
+import { faSearch, faAngleDown} from '@fortawesome/free-solid-svg-icons';
 function Submenu(){
     return(
         <nav id="submenu">
             <h1>Artisan</h1>
 
-           <div className="search">
-            
-                {/* <img src={require("./media/bg.jpeg")} alt="search icon" /> */}
-                
-                {/* <input type="search"  placeholder="search..." <FontAwesomeIcon icon={faSearch}/> /> */}
-
-            </div> 
+            <div className="search-bar">
+      <FontAwesomeIcon icon={faSearch} className="search-icon" />
+      <input type="search" placeholder="Search..." />
+    </div> 
 
             <div className="profile" id="flex">
 
@@ -20,7 +17,7 @@ function Submenu(){
 
                 <img src={require("./media/dp.jpg")} alt="dp" id="dp"/>
 
-                <span>John Doe <span>&#8964;</span> </span>
+                <span id="flex">John Doe <span><FontAwesomeIcon icon={faAngleDown}/></span> </span>
             </div>
 
         </nav>
