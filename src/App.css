@@ -390,9 +390,8 @@ body{
   }
   
   .sidemenu ul li a:hover{
-    /* color: #B197FC; */
+    color: #B197FC;
     padding: 15px;
-    /* background: linear-gradient(to right , rgba(177, 151, 252, .2)10%, rgba(255, 255,255, 0)90%); */
     box-shadow: 2px 2px 5px black;
     border-left: 7px solid #8a2be2;
     border-top-left-radius: 5px;
@@ -528,3 +527,19 @@ body{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
   }
   
+
+  @media only screen and (max-width: 600px) {
+    main {
+      margin: 0;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-template-areas: 
+            "submenu"
+            "sidemenu"
+            "banner"
+            "balance"
+            "hotbids"
+            "collections"
+            "footer";
+    }
+  }

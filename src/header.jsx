@@ -21,6 +21,7 @@ function Header() {
   };
   return (
     <nav id="top_nav">
+      
       <h1>Artisan</h1>
 
       <ul>
