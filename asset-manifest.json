@@ -1,0 +1,33 @@
+{
+  "files": {
+    "main.css": "/Artisan/static/css/main.29b689b5.css",
+    "main.js": "/Artisan/static/js/main.8a87697f.js",
+    "static/js/787.f2f85e82.chunk.js": "/Artisan/static/js/787.f2f85e82.chunk.js",
+    "static/media/bg.jpeg": "/Artisan/static/media/bg.4757e03d3d3a5171c470.jpeg",
+    "static/media/black-maska-neon-anonim-chernii-109917.jpeg": "/Artisan/static/media/black-maska-neon-anonim-chernii-109917.0a154002dd287c8df667.jpeg",
+    "static/media/dp.jpg": "/Artisan/static/media/dp.6ccd76c6b457bfc209d1.jpg",
+    "static/media/dp_3.jpg": "/Artisan/static/media/dp_3.95fef499f9c9d844d03e.jpg",
+    "static/media/dp_4.jpg": "/Artisan/static/media/dp_4.42dd6a37e17f803aefd1.jpg",
+    "static/media/ai_nft.jpeg": "/Artisan/static/media/ai_nft.6e1b1ed76ab72ca77c19.jpeg",
+    "static/media/dp_5.jpg": "/Artisan/static/media/dp_5.62d9ac478977b2020e24.jpg",
+    "static/media/grizzy.jpeg": "/Artisan/static/media/grizzy.1f39ede8b9167b5f4ba4.jpeg",
+    "static/media/eva.jpeg": "/Artisan/static/media/eva.2867b3649247f4913189.jpeg",
+    "static/media/earlyman.jpeg": "/Artisan/static/media/earlyman.75ab836851afc6d72c14.jpeg",
+    "static/media/lazy_grizzy.jpeg": "/Artisan/static/media/lazy_grizzy.6841d8435d7bd8680d15.jpeg",
+    "static/media/dp_9.jpeg": "/Artisan/static/media/dp_9.969b0fa4fb551a49b6e9.jpeg",
+    "static/media/Ide.jpeg": "/Artisan/static/media/Ide.0afa784630f44118d811.jpeg",
+    "static/media/sedusa_1.jpeg": "/Artisan/static/media/sedusa_1.2af7c730f7fd04d991cc.jpeg",
+    "static/media/dp_6.jpeg": "/Artisan/static/media/dp_6.b1eac4e15a6bc7200b93.jpeg",
+    "static/media/faceless_clone.jpeg": "/Artisan/static/media/faceless_clone.05a1d2fc6c96d5961133.jpeg",
+    "static/media/MavenPro-VariableFont_wght.ttf": "/Artisan/static/media/MavenPro-VariableFont_wght.0d4dc76c6f533f5bd1f1.ttf",
+    "static/media/faceless.jpeg": "/Artisan/static/media/faceless.fd731a9521d8be522620.jpeg",
+    "index.html": "/Artisan/index.html",
+    "main.29b689b5.css.map": "/Artisan/static/css/main.29b689b5.css.map",
+    "main.8a87697f.js.map": "/Artisan/static/js/main.8a87697f.js.map",
+    "787.f2f85e82.chunk.js.map": "/Artisan/static/js/787.f2f85e82.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.29b689b5.css",
+    "static/js/main.8a87697f.js"
+  ]
+}
